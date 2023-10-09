@@ -1,0 +1,41 @@
+/* 2XL Device Start  */
+@media (min-width:1400px){
+
+}
+/* 2XL Device End */
+
+
+/* XL Device start */
+@media (min-width:1200px) and (max-width:1399.98px){
+    
+}
+/* XL Device End */
+
+
+/* L Device start */
+@media (min-width:992px) and (max-width:1199.98px){
+    
+}
+/* L Device End */
+
+
+/* M Device start */
+@media (min-width:768px) and (max-width:991.98px){
+    
+}
+/* M Device End */
+
+
+/* SM Device start */
+@media (min-width:576px) and (max-width:767.98px){
+    
+}
+/* SM Device End */
+
+
+/* EXS Device start*/
+@media (max-width:575.98px){
+    
+}
+/* EXS Device End */
+

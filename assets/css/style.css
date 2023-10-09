@@ -1,0 +1,67 @@
+/* 
+Theme Name: Aytor
+Version : 1.0.0
+
+Table of contents
+
+common section
+1) Header Part
+    1.1) Top Bar Section
+    1.2) Nav Bar Section
+
+ */
+ /* Variables */
+ :root{
+    --first_primary_color: #FF6F61;
+    --second_primary_color: #FF5645;
+    --third_primary_color: #151A32;
+    --text-color: #11161E;
+    --paragraph_color: #444444;
+    --background_color:#F1F1F1;
+    --white: #FFFFFF;
+    --black: #000000;
+    --bg: #F1F3F4;
+
+
+ }
+/* top_bar css start*/
+#top_bar {
+    background-color: var(--third_primary_color);
+    color: var(--white);
+    padding: 11px 0;
+}
+#top_bar .left i,
+#top_bar .left span:last-child{
+    color: var(--first_primary_color);
+}
+#top_bar .right ul:first-child li {
+    padding: 0 20px;
+    border-right: 1px solid #8c8c8c;
+}
+#top_bar .right ul:first-child li a{
+    font-family: var(--secondary-font);
+    color: var(--white);
+}
+#top_bar .right ul:first-child li select{
+    background-color: var(--third_primary_color);
+    color: var(--white);
+    border: none;
+    
+}
+#top_bar .right ul:first-child li select:focus{
+    outline: 0;
+}
+
+#top_bar .right ul:last-child i{
+    color: var(--white);
+    font-size: 20px;
+    padding: 0 5px;
+}
+
+/* top_bar css end*/
+
+/* nav_bar css start*/
+#nav_bar{
+    padding: 37px 0;
+}
+/* nav_bar css end*/
