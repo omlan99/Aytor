@@ -34,4 +34,8 @@ body{
 p{
     font-family: var(--secondary-font);
 }
+footer{
+    background-color: var(--text-color);
+    color: var(--white);
+}
 /*  bootstrap reset css end */

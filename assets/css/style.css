@@ -21,7 +21,7 @@ common section
     --white: #FFFFFF;
     --black: #000000;
     --bg: #F1F3F4;
-
+    --Gray-5: #E0E0E0;
 
  }
 /* top_bar css start*/
@@ -52,10 +52,14 @@ common section
     outline: 0;
 }
 
-#top_bar .right ul:last-child i{
+#top_bar .right ul:last-child a{
     color: var(--white);
     font-size: 20px;
     padding: 0 5px;
+    transition: 0.4s;
+}
+#top_bar .right ul:last-child a:hover{
+    color: var(--first_primary_color);
 }
 
 /* top_bar css end*/
@@ -64,4 +68,100 @@ common section
 #nav_bar{
     padding: 37px 0;
 }
+#nav_bar .collapse ul:first-child li a{
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 26px;
+    padding: 0 43px;
+}
+#nav_bar .collapse ul:last-child li button,
+#nav_bar .collapse ul:last-child li a{
+    font-size: 24px;
+    border:none;
+    background: none;
+    padding: 0 10px;
+    color: var(--text-color);
+}
+#nav_bar .collapse ul:first-child li a:hover,
+#nav_bar .collapse ul:last-child li a:hover,
+#nav_bar .collapse ul:last-child li button:hover{
+    color: var(--first_primary_color);
+}
+#nav_bar .collapse ul:last-child li button span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 14px;
+    color: var(--white);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--first_primary_color);
+    line-height: 14px
+}
+
 /* nav_bar css end*/
+
+/* footer css start*/
+
+footer .part_1{
+    border-bottom: 1px solid #E0E0E0;
+    padding: 71px 0;
+}
+footer .part_1 .logo a i{
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--text-color);
+    transition: 0.4s;
+}
+footer .part_1 .logo a:hover i{
+    background-color: var(--first_primary_color);
+    color:var(--white);
+}
+footer .part_2{
+    padding: 70px 0;
+}
+footer .part_2 h4{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    padding-bottom: 22px;
+}
+footer .part_2 a{
+    color: var(--white);
+    transition: 0.4s;
+    
+}
+footer .part_2 a:hover{
+    color:var(--first_primary_color);
+}
+footer .part_2 .arrow li{
+    line-height: 28px;
+    
+}
+footer .part_2 .arrow li::before{
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 700;
+    padding-right: 5px;
+    
+}
+footer table td{
+    padding-left: 10px;
+}
+footer .contact li i{
+    height: 24px;
+    width: 24px;
+    color: var(--first_primary_color);
+    padding-right: 10px;
+}
+footer div:last-child p{
+    line-height: 28px;
+    padding-bottom: 23px;
+}
+
+/* footer css end*/
