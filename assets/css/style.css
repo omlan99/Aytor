@@ -163,5 +163,22 @@ footer div:last-child p{
     line-height: 28px;
     padding-bottom: 23px;
 }
-
+footer div:last-child form{
+    background-color: var(--white);
+}
+footer div:last-child form input{
+    background: none;
+    border: none;
+    padding: 11px 10px;
+    line-height: 28px;
+}
+footer div:last-child form button{
+    border: none;
+    background-color: var(--first_primary_color);
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    padding: 8px 17px;
+}
 /* footer css end*/
