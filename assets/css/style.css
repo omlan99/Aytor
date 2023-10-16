@@ -103,6 +103,139 @@ common section
 
 /* nav_bar css end*/
 
+/* hero css start*/
+#hero .slider .hero_1,
+#hero .slider .hero_2,
+#hero .slider .hero_3{
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}  
+#hero .slider .hero_1,
+#hero .slider .hero_3{
+    color: var(--white);
+}
+#hero .slider div h1{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 74px;
+    padding: 16px 0;
+}
+#hero .slider div p{
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+#hero .slider div a{
+    padding: 13px 37px;
+    line-height: 30px;
+    border: none;
+    background-color: var(--first_primary_color);
+    color: var(--white);
+    transition: 0.4s;
+}
+#hero .slider div a:hover{
+    background-color: var(--white);
+    color: var(--first_primary_color);
+}
+#hero .slider .hero_2  a,
+#banner a{
+    background-color: var(--black);
+    color: var(--white);
+}
+#hero .slider ul{
+    display: flex;
+    position: absolute;
+    top:650px;
+    left: 100px;
+    
+}
+#hero .slider ul li{
+    line-height: 0;
+}
+#hero .slider ul li button{
+    border: none;
+    background-color: var(--white);
+    font-size: 0;
+    width: 10px;
+    height: 5px;
+    border-radius: 2px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+#hero .slider ul li.slick-active button{
+    width: 20px;
+    background-color: var(--first_primary_color);
+}
+/* hero css end*/
+/* highlight css start*/
+#highlight{
+    padding-top: 100px;
+}
+#highlight .left .overlay{
+    position: absolute;
+    padding: 50px;
+    inset: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+    transform: scale(0);
+    color: var(--white);
+}
+#highlight .left .overlay a{
+    display: block;
+    padding-top: 30px;
+    color: var(--white);
+}
+#highlight .left .overlay a:hover{
+    color: var(--first_primary_color);
+    border: 1px solid var(--first_primary_color);
+
+}
+#highlight .left .overlay a::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+}
+#highlight .left .img_1:hover .overlay{
+    transform: scale(1);
+}
+#highlight .left img{
+    display: block;
+    padding: 6px;
+}   
+#highlight .right img{
+    padding:6px;
+}
+/* highlight css end*/
+
+/* banner css start*/
+#banner{
+    height: 461px;
+    background-size: cover;
+    color: var(--white);
+}
+#banner h2{
+    font-family: var(--primary-font);
+    padding-bottom: 15px;
+    font-size: 48px;
+    line-height: 57.6px;
+}
+#banner p{
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+#banner a{
+    background:transparent;
+    padding: 18px 20px;
+    border: 1px solid var(--white);
+    transition: 0.4s;
+}
+#banner a:hover{
+    border:none;
+    background-color: var(--first_primary_color);
+
+}
+/* banner css end*/
+
 /* footer css start*/
 
 footer .part_1{
