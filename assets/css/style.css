@@ -172,30 +172,48 @@ common section
 #highlight{
     padding-top: 100px;
 }
-#highlight .left .overlay{
+#highlight .left .overlay,
+#highlight .right .overlay{
     position: absolute;
     padding: 50px;
     inset: 20px;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.65);
     transform: scale(0);
     color: var(--white);
+    transition: 0.6s;
 }
-#highlight .left .overlay a{
-    display: block;
+#highlight .right .overlay{
+    padding: 250px;
+}
+#highlight .left .overlay a,
+#highlight .right .overlay a{
+    display: inline-block;
     padding-top: 30px;
     color: var(--white);
+    position: relative;
 }
-#highlight .left .overlay a:hover{
+#highlight .left .overlay a:hover,
+#highlight .right .overlay a:hover{
     color: var(--first_primary_color);
-    border: 1px solid var(--first_primary_color);
+}
 
-}
-#highlight .left .overlay a::after{
+#highlight .left .overlay a::after,
+#highlight .right .overlay a::after{
     content: "";
-    width: 100%;
-    height: 2px;
+    transition: 0.4s;
+    width: 0;
+    border-bottom: 2px solid var(--first_primary_color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
 }
-#highlight .left .img_1:hover .overlay{
+#highlight .left .overlay a.shop:hover::after,
+#highlight .right .overlay a.shop:hover::after{
+    width: 100%;
+}
+#highlight .left .img_1:hover .overlay,
+#highlight .right .img_1:hover .overlay{
     transform: scale(1);
 }
 #highlight .left img{
@@ -235,6 +253,42 @@ common section
 
 }
 /* banner css end*/
+
+/* best selling css start*/
+#best_selling .overlay{
+    position: absolute;
+    padding-top: 32px;
+    left: 368px;
+    transform: scale(0);    
+}
+#best_selling .overlay image:hover .overlay{
+    transform: scale(1);
+}
+#best_selling .overlay a{
+    display:block;
+    padding-bottom: 10px;
+}
+#best_selling .overlay a i{
+    /* display: inline-block;
+    padding: 20px;
+    line-height: 16px;
+    background-color: red;
+    color: #000000; */
+    /* width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--text-color); */
+    background-color: red;
+    line-height: 38px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--paragraph_color);
+}
+/* best selling css end*/
 
 /* footer css start*/
 
