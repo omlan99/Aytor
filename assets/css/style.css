@@ -224,7 +224,11 @@ common section
     padding:6px;
 }
 /* highlight css end*/
-
+/* new_arrival css start*/
+ #new_arrivalv.myclass div{ 
+    padding: 0 100px; 
+ }
+/* new_arrival css end*/
 /* banner css start*/
 #banner{
     height: 461px;
