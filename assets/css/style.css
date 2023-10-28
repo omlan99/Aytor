@@ -225,15 +225,51 @@ common section
 }
 /* highlight css end*/
 /* new_arrival css start*/
- #new_arrivalv.myclass div{ 
-    padding: 0 100px; 
- }
+#new_arrival h2{
+    padding-top: 65px;
+    padding-bottom: 36px;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 800;
+}
+#new_arrival .slide{
+    padding-bottom: 101px;
+}
+
 /* new_arrival css end*/
 /* banner css start*/
 #banner{
     height: 461px;
     background-size: cover;
     color: var(--white);
+    position: relative;
+}
+#banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+#banner:hover::before{
+    transform: scaleY(1);  
+    opacity: 0;
+}
+#banner::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scaleX(0);
+    transition: 0.5s;
+
+}
+#banner:hover::after{
+    transform: scaleX(1);
+    opacity: 0; 
 }
 #banner h2{
     font-family: var(--primary-font);
@@ -259,6 +295,27 @@ common section
 /* banner css end*/
 
 /* best selling css start*/
+#best_selling{
+    position: relative;
+}
+#best_selling h2{
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 46px;
+    padding-top: 96px;
+    padding-bottom: 36px;
+}
+#best_selling .image .img_tag{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    background-color: var(--first_primary_color);
+    color: var(--white);
+    padding: 5px 15px 5px 10px;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    transform: rotate(-90deg);
+}  
 #best_selling .overlay{
     position: absolute;
     padding-top: 32px;
@@ -273,24 +330,7 @@ common section
     padding-bottom: 10px;
 }
 #best_selling .overlay a i{
-    /* display: inline-block;
-    padding: 20px;
-    line-height: 16px;
-    background-color: red;
-    color: #000000; */
-    /* width: 24px;
-    height: 24px;
-    line-height: 24px;
-    text-align: center;
-    background-color: var(--white);
-    color: var(--text-color); */
-    background-color: red;
-    line-height: 38px;
-    width: 38px;
-    height: 38px;
-    text-align: center;
-    border-radius: 50%;
-    color: var(--paragraph_color);
+
 }
 /* best selling css end*/
 

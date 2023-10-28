@@ -15,7 +15,9 @@
         <link rel="icon" type="image/png" sizes="192x192"  href="./assets/images/android-icon-192x192.png">
 
         <!-- Google Fonts -->
-        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
         <!-- Slick Css Link -->
         <link rel="stylesheet" href="./assets/vendors/css/slick.min.css">
         <!-- Bootstrap Css Link -->
@@ -197,14 +199,14 @@
                     <div class="row">
                         <div class="col-lg-5 left">
                             <div class="position-relative img_1">
-                                <img src="./assets/images/banner_2_1.jpg" alt="" >
+                                <img class="w-100"src="./assets/images/banner_2_1.jpg" alt="" >
                                 <div class="overlay text-center">
                                     <h2><a href="">Beauty Cream</a></h2>
                                     <a href="" class="shop"> Shop Now <i class="fa-solid fa-arrow-right"></i></a>
                                 </div>
                             </div>
                             <div class="position-relative img_1">
-                                <img src="./assets/images/banner_2_2.jpg" alt="">
+                                <img class="w-100" src="./assets/images/banner_2_2.jpg" alt="">
                                 <div class="overlay text-center">
                                     <h2><a href="">Natural Cream</a></h2>
                                     <a href="" class="shop"> Shop Now <i class="fa-solid fa-arrow-right"></i></a>
@@ -213,7 +215,7 @@
                         </div>
                         <div class="col-lg-7 right ">
                             <div class="img_1 position-relative">
-                                <img src="./assets/images/banner_2_3.jpg" alt="">
+                                <img class="w-100" src="./assets/images/banner_2_3.jpg" alt="">
                                 <div class="overlay text-center">
                                     <h2><a href="">Face Cream</a></h2>
                                     <a href="" class="shop"> Shop Now <i class="fa-solid fa-arrow-right"></i></a>
@@ -225,9 +227,9 @@
            <!--hightlight section end-->
            <!--new_arrival section start-->
              <section id="new_arrival">
-
+                <h2 class="text-center">New Arrival Products</h2>
                 <div class="container">
-                    <div class="myclass">
+                    <div class="slide">
                         <div>
                             <img src="./assets/images/featured-2-1.jpg" alt="">
                         </div>
@@ -277,35 +279,39 @@
             <!--best_selling section start-->
                <section id="best_selling">
                     <div class="container">
+                        <h2 class="text-center">Best Selling Products</h2>
                         <div class="row">
-                            <div class="col-lg-3 position-relative image">
+                            <div class="col-3 position-relative image item">
+                                <img src="./assets/images/featured-2-1.jpg" alt="">
+                                <div class="img_details">
+                                    <a href="">Lotion Shower Gel</a>
+                                </div>
+                                <div class="img_tag">
+                                    -45%
+                                </div>
+                            </div>
+                            <div class="col-3 item">
+                                <img src="./assets/images/featured-2-1.jpg" alt="">
+                                <div class="img_tag">
+                                    -45%
+                                </div>
+                            </div>
+                            <div class="col-3">
                                 <img src="./assets/images/featured-2-1.jpg" alt="">
                             </div>
-                            <div class="overlay">
-                                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="#"><i class="fa-solid fa-heart"></i></a>
-                                <a href="#"><i class="fa-solid fa-eye"></i></a>
-                                <a href="#"><i class="fa-solid fa-signal"></i></a>
-                            </div>
-                            <div class="col-lg-3">
+                            <div class="col-3">
                                 <img src="./assets/images/featured-2-1.jpg" alt="">
                             </div>
-                            <div class="col-lg-3">
-                                <img src="./assets/images/featured-2-1.jpg" alt="">
-                            </div>
-                            <div class="col-lg-3">
-                                <img src="./assets/images/featured-2-1.jpg" alt="">
-                            </div>
-                            <div class="col-lg-3">
+                            <div class="col-3">
                                <img src="./assets/images/featured-2-1.jpg" alt="">
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-3">
                                  <img src="./assets/images/featured-2-1.jpg" alt="">
                             </div>
-                            <div class="col-lg-3">
+                            <div class="col-3">
                                  <img src="./assets/images/featured-2-1.jpg" alt="">
                             </div>
-                             <div class="col-lg-3">
+                             <div class="col-3">
                                 <img src="./assets/images/featured-2-1.jpg" alt="">
                              </div>
                             
@@ -313,6 +319,24 @@
              		</div>
                </section>
             <!--best_selling section end-->
+            <!--special_offer section start-->
+              <section id="special_offer">
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h5>SPECIAL OFFER</h5>
+                        <h3>
+                            Beauty Inspired by Real Shine In Life
+                        </h3>
+                        <p>
+                            Completely grow maintainable niches via tactical services. Progressively synthesize market positioning paradigms for functional architectures. Professionally aggregate.
+                        </p>
+                        <a href="">Explore More</a>
+                    </div>
+                    <div class="col-lg-6"></div>
+                </div>
+              </section>
+            <!--special_offer section end-->
         </main>
 
         <!--Main section end -->

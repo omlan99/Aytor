@@ -5,13 +5,12 @@ $(document).ready(function(){
         dots:true,
 
     });
-    $('.myclass').slick({
+    $('.slide').slick({
       autoplay:true,
-      // infinite:true,
       slidesToShow: 4,
       slidesToScroll: 2,
       arrows: false,
-      dots:true,
+      dots:false,
     })
   });
       
