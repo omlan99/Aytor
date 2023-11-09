@@ -11,6 +11,7 @@ common section
 
  */
  /* Variables */
+
  :root{
     --first_primary_color: #FF6F61;
     --second_primary_color: #FF5645;
@@ -225,16 +226,33 @@ common section
 }
 /* highlight css end*/
 /* new_arrival css start*/
+#new_arrival{
+    padding: 95px 0 100px 0;
+}
 #new_arrival h2{
-    padding-top: 65px;
     padding-bottom: 36px;
     font-size: 36px;
     line-height: 46px;
     font-weight: 800;
 }
+
 #new_arrival .slide{
     padding-bottom: 101px;
 }
+#new_arrival .content p{
+    padding-top: 25px;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+#new_arrival .content h5{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+
+}
+#new_arrival i{
+     color: var(--first_primary_color);
+}   
 
 /* new_arrival css end*/
 /* banner css start*/
@@ -251,11 +269,11 @@ common section
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     transform: scaleY(0);
-    transition: 0.5s;
-}
+ }
 #banner:hover::before{
     transform: scaleY(1);  
     opacity: 0;
+    transition: 1s;
 }
 #banner::after{
     content: '';
@@ -264,12 +282,13 @@ common section
     position: absolute;
     background-color: rgba(255, 255, 255, 0.2);
     transform: scaleX(0);
-    transition: 0.5s;
+    
 
 }
 #banner:hover::after{
     transform: scaleX(1);
     opacity: 0; 
+    transition: 1s;
 }
 #banner h2{
     font-family: var(--primary-font);
@@ -333,7 +352,24 @@ common section
 
 }
 /* best selling css end*/
-
+/* soecial_offer css start*/
+#spedia_offer .content{
+    margin-left: 15px;
+}
+#special_offer .img{
+    position:relative;
+}
+#special_offer .img a{
+    color: var(--white);
+    position: absolute;
+    top:50%;
+    left:46%;
+}
+#special_offer .img a i{
+    font-size: 20px;
+    
+}
+/* soecial_offer css end*/
 /* footer css start*/
 
 footer .part_1{
