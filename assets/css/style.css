@@ -227,7 +227,7 @@ common section
 /* highlight css end*/
 /* new_arrival css start*/
 #new_arrival{
-    padding: 95px 0 100px 0;
+    padding: 65px 0 100px 0;
 }
 #new_arrival h2{
     padding-bottom: 36px;
@@ -352,9 +352,22 @@ common section
 
 }
 /* best selling css end*/
-/* soecial_offer css start*/
-#spedia_offer .content{
-    margin-left: 15px;
+/* deals css start*/
+#dealing{
+    box-shadow: 0px 0px 70px rgba(21,26,50,0.08);
+    background-color: var(--white);
+    padding: 40px 40px 60px 40px;
+}
+.deals {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+/* deals css end*/
+/* special_offer css start*/
+#special_offer{
+    background-color: var(--bg);
 }
 #special_offer .img{
     position:relative;
@@ -367,9 +380,12 @@ common section
 }
 #special_offer .img a i{
     font-size: 20px;
-    
+
 }
-/* soecial_offer css end*/
+/* special_offer css end*/
+/* about css start*/
+
+/* about css end*/
 /* footer css start*/
 
 footer .part_1{
@@ -449,3 +465,75 @@ footer div:last-child form button{
     padding: 8px 17px;
 }
 /* footer css end*/
+
+/* search_modal css start*/
+#search_modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.5s;
+
+}
+#search_modal .show{
+    transform: scale(1);
+    
+}
+#search_modal form{
+    border:2px solid var(--first_primary_color);
+    border-radius: 50px;
+    padding: 15px 20px;
+
+}
+#search_modal form input{
+    padding: 10px;
+    border: none;
+    background: none;
+    color: var(--Gray-5);
+}
+#search_modal form input::placeholder{
+    color: var(--Gray-5);
+}
+#search_modal form button{
+    color: var(--Gray-5);
+    border: none;
+    background:none;
+    font-size: 25px;
+}
+#search_modal #close_btn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: var(--white);
+    color: var(--first_primary_color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    transition: 0.4s;
+    transform-origin: center;
+
+}
+#search_modal #close_btn:hover{
+    background-color: var(--white);
+    border-color: var(--white);
+    transform: rotate(90deg);
+}
+/* search_modal css end* 
+    width: 60px;
+    height: 60px;
+    background: none;
+    border-radius: 50%;
+    border: 1px solid var(--primary-color-light);
+    color: var(--primary-color-light);
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: .4s;
+    #search_modal #search_close_btn:hover{
+    background: var(--light);
+    border-color: var(--light);
+    transform: rotate(90deg);
+}/   
