@@ -21,12 +21,12 @@ $(document).ready(function(){
   })
 
 
-  // $('#search').on('click', function(){
-  //   $('#search_modal').addClass('show');
-  // })
+  
   $('#search').on('click', function(){
     $('#search_modal').addClass('show');
   })
- 
+//  $('search_modal').on('click', function(){
+//   $('search_modal').removeclass('show');
+//  })
 });
 

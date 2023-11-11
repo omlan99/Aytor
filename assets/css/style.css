@@ -476,7 +476,7 @@ footer div:last-child form button{
     transition: 0.5s;
 
 }
-#search_modal .show{
+#search_modal.show{
     transform: scale(1);
     
 }
