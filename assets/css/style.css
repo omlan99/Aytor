@@ -236,8 +236,12 @@ common section
     font-weight: 800;
 }
 
-#new_arrival .slide{
+#new_arrival .slide_1{
     padding-bottom: 101px;
+}
+.margin{
+    margin: 0 10px;
+    padding-right: 100px;
 }
 #new_arrival .content p{
     padding-top: 25px;
@@ -316,6 +320,7 @@ common section
 /* best selling css start*/
 #best_selling{
     position: relative;
+    padding: 0 0 95px;
 }
 #best_selling h2{
     font-size: 36px;
@@ -353,7 +358,16 @@ common section
 }
 /* best selling css end*/
 /* deals css start*/
-#dealing .shower{
+#dealing{
+    position: relative;
+    padding: 0 0 100px;
+}
+#dealing .container{
+
+}
+
+
+#dealing .slide_2{
     box-shadow: 0px 0px 70px rgba(21,26,50,0.08);
     background-color: var(--white);
     padding: 82px 40px 60px 40px;
@@ -362,7 +376,33 @@ common section
 }
 #dealing h2{
     padding-bottom: 78px;
+    font-size: 36px;
+    font-weight: 600;
 }
+#dealing #timer{
+    border-radius: 60px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding : 16px 40px 11px;
+    box-shadow: 0px 0px 10px rgba(21,26,50,0.1);
+    position: absolute;
+    top: 65px;
+    left: 460px;
+    z-index: 1;
+}
+#dealing #timer h5{
+    font-size: 24px;
+    font-weight: 600;
+}
+#dealing #timer span{
+    font-size: 42px;
+    font-weight: 600;
+    padding: 0 22px 0; 
+    color: var(--first_primary_color);
+}
+
 .deals {
     background-repeat: no-repeat;
     background-position: center;
@@ -392,17 +432,33 @@ common section
     padding-bottom: 30px;
     font-size: 20px;
 }
-.btn{
+.deals .btn{
     background-color: var(--black);
+}
+.deals .btn:hover{
+    background-color: var(--white);
+    
 }
 
 /* deals css end*/
+/* features css start*/
+#features {
+    padding: 25px 0;
+    background-color: var(--bg);
+}
+#features .d-flex{
+    border-right: 4px solid var(--Gray-5);
+    justify-content: space-evenly;
+}
+/* features css end*/
 /* special_offer css start*/
 #special_offer{
     background-color: var(--bg);
 }
 #special_offer .img{
     position:relative;
+
+
 }
 #special_offer .img a{
     color: var(--white);
@@ -415,11 +471,52 @@ common section
 
 }
 /* special_offer css end*/
-/* about css start*/
+#news{
+    padding: 95px 0 118px;
+    position: relative;
+}
+#news h2{
+    padding-bottom: 36px;
+}
+#news .slide_3 .pad{
+    padding: 35px;
+    margin:0 12px 0;
+    background-color: var(--white);
+    box-shadow: 0px 5px 14px rgba(17,22,30,0.08);
+}
+#news a{
+    color: var(--black);
+}
+#news a:hover{
+    color: var(--first_primary_color);
+}
+#news .slide_3 ul{
+    display: flex;
+    position: absolute;
+    top: 460px;
+    left: 460px;
 
-/* about css end*/
+}
+#news .slide_3 ul li button{
+    background-color: var(--Gray-5);
+    font-size: 0;
+    border: none;
+    width: 10px;
+    height: 5px;
+    margin: 2px;
+    border-radius: 10px;
+    transition: 0.4s;
+    
+
+}
+#news .slide_3 ul li.slick-active button{
+    width: 25px;
+    background-color: var(--black);
+}
 /* footer css start*/
-
+footer{
+    position: relative;
+}
 footer .part_1{
     border-bottom: 1px solid #E0E0E0;
     padding: 71px 0;

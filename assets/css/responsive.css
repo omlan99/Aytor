@@ -1,13 +1,25 @@
 /* 2XL Device Start  */
 @media (min-width:1400px){
-
+    #hero .slider ul {
+        top: 615px;
+        left: 607px;
+    }
+    #special_offer .img a {
+        color: var(--white);
+        position: absolute;
+        top: 44%;
+        left: 43%;
+    }
 }
 /* 2XL Device End */
 
 
 /* XL Device start */
 @media (min-width:1200px) and (max-width:1399.98px){
-    
+    #hero .slider ul {
+        top: 640px;
+        left: 45px;
+    }
 }
 /* XL Device End */
 
