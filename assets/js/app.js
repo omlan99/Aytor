@@ -6,26 +6,26 @@ $(document).ready(function(){
 
   });
   $('.slide_1').slick({
-    autoplay:false,
+    autoplay: true,
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
-    dots:false,
-  })
+    dots: false,
+  });
   $('.slide_2').slick({
     autoplay:true,
     slidesToShow: 2,
     slidesToScroll: 2,
     arrows: false,
      dots:false,
-  })
+  });
   $('.slide_3').slick({
     autoplay: true,
     slidesToShow:3,
     slidesToScroll: 1,
     arrows: false,
     dots:true,
-  })
+  });
 
 
   
