@@ -214,7 +214,7 @@ common section
 /* highlight css end*/
 /* new_arrival css start*/
 #new_arrival{
-    padding: 65px 0 100px 0;
+    padding: 65px 0 100px;
 }
 #new_arrival h2{
     padding-bottom: 36px;
@@ -825,10 +825,98 @@ footer div:last-child form button{
 
 /* about_story css start*/
 #about_story{
-    padding: 107px 0;
+    /* padding: 107px 0; */
     background-color: var(--Gray-5);
 }  
-#about_story img{
+#about_story .img_div{
+    position:absolute;
+    bottom:0;
+    right: 0;
+    width: 50%;
+    height: 100%;
 }
 /* about_story css end*/
+
+/* about_insta css start*/
+#about_insta{
+    padding-bottom: 100px;
+}
+#about_insta h2{
+    padding-bottom: 36px;
+    font-size: 36px;
+    font-weight: 600;
+}
+#about_insta .insta_slider ul{
+    display: flex;
+    position: absolute;
+    top: 130%;
+    left: 39%;
+   
+    
+}
+#about_insta .insta_slider ul li{
+    line-height: 0;
+}
+
+#about_insta .insta_slider ul li button{
+    border: none;
+    background-color: var(--Gray-5);
+    font-size: 0;
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    margin: 0 3px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#about_insta .insta_slider ul li.slick-active button{
+    width: 20px;
+    background-color: var(--first_primary_color);
+} 
+#about_insta .insta_slider .insta_img{
+    position: relative;
+    margin: 0 12px;
+}
+#about_insta .insta_slider .insta_img img{
+    width: 100%;
+}
+#about_insta .insta_slider .insta_img::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--text-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.5);
+    transition: 0.4s;
+}
+#about_insta .insta_slider .insta_img:hover:before{
+    visibility: visible;
+    opacity: 0.6;
+    transform: scale(1);
+}
+#about_insta .insta_slider .insta_logo{
+    color: var(--white);
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: scale(0);
+    transition: 0.4;
+}
+#about_insta .insta_slider .insta_img:hover .insta_logo{
+        transform: scale(1);
+}
+#about_insta .insta_slider .insta_logo i{
+    font-size: 28px;
+    font-weight: 400;
+
+}
+#about_insta .insta_slider .insta_logo i:hover{
+    color: var(--first_primary_color);
+}
+/* about_insta css end*/
 /*================ About page css end ======================*/

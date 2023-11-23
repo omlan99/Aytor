@@ -27,6 +27,13 @@ $(document).ready(function(){
     dots:true,
   });
 
+  $('.insta_slider').slick({
+    autoplay:true,
+    slidesToScroll:1,
+    slidesToShow:6,
+    arrows:false,
+    dots:true,
+  })
 
   
   $('#search').on('click', function(){
