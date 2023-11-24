@@ -120,10 +120,10 @@ footer{
 .bg_white{
     background-color: var(--white);
 }
-.product_img img{
+.card_img img{
     width: 100%;
 }
-.slide_1 .product_card{
+.slide_1 .card{
     border: 1px solid var(--bg);
     margin:12px;
     padding-bottom: 27px;

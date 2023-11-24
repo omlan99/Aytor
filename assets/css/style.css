@@ -242,10 +242,10 @@ common section
 #new_arrival i{
      color: var(--first_primary_color);
 }   
-#new_arrival .product_img{
+#new_arrival .card_img{
     position: relative;
 }
-#new_arrival .product_img .hover_img{
+#new_arrival .card_img .hover_img{
     position: absolute;
     inset: 0;
     z-index: 2;
@@ -253,7 +253,7 @@ common section
     object-position: center;
     
 }
-#new_arrival .product_img:hover .show_img{
+#new_arrival .card_img:hover .show_img{
     opacity: 0;
     visibility: hidden;
 }    
@@ -262,13 +262,13 @@ common section
     top:0;
     left: 0;
 }
-/* #new_arrival .product_img{
+/* #new_arrival .card_img{
     position: relative;
 }
-#new_arrival .product_img img{
+#new_arrival .card_img img{
     width: 100%;
 }
-#new_arrival .product_img .hover_img{
+#new_arrival .card_img .hover_img{
     position: absolute;
     inset: 0;
     z-index: 4;
@@ -276,7 +276,7 @@ common section
     object-position: center;
     transition: 0.4s;
 }
-#new_arrival .product_img:hover .hover_img{
+#new_arrival .card_img:hover .hover_img{
     opacity: 0;
     visibility: hidden;
 } */
@@ -838,15 +838,15 @@ footer div:last-child form button{
     font-weight: 700;
     margin: 24px;
 }
-#about_team .product_img{
+#about_team .card_img{
     overflow: hidden;
 }
-#about_team .product_img img{
+#about_team .card_img img{
     transition: 0.4s;
 
 }
 
-#about_team .product_card:hover img{
+#about_team .card:hover img{
     transform: scale(1.1);
     
 }
