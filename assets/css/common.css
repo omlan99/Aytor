@@ -117,4 +117,14 @@ footer{
 }
 /*  bootstrap reset css end */
 
-
+.bg_white{
+    background-color: var(--white);
+}
+.product_img img{
+    width: 100%;
+}
+.slide_1 .product_card{
+    border: 1px solid var(--bg);
+    margin:12px;
+    padding-bottom: 27px;
+}
