@@ -128,3 +128,35 @@ footer{
     margin:12px;
     padding-bottom: 27px;
 }
+
+.banner_title{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+    color: var(--white);
+}
+.banner_menu li,.banner_menu a{
+    color: var(--white);
+}
+
+.banner_menu li{
+    display: inline-block;
+    margin-right: 3px;
+    padding-right: 3px;
+    color: var(--white);
+}
+.banner_menu li:first-child::after{
+    content: '/';
+    margin-left: 5px;
+    
+}
+.cards .cards-img img{
+    position: relative;
+}
+.cards .cards_img .action{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+}
+    
