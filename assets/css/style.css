@@ -984,5 +984,14 @@ footer div:last-child form button{
     line-height: 58px;
     color: var(--white);
 }
+.shop_product .product_img{
+    position: relative;
+}
+.shop_product .tag{
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    background-color: red;
 
+}
 /*================ Shop page css end ======================*/
