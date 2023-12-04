@@ -984,14 +984,70 @@ footer div:last-child form button{
     line-height: 58px;
     color: var(--white);
 }
-.shop_product .product_img{
-    position: relative;
+#shop_product{
+    padding: 100px 0 100px ;
 }
-.shop_product .tag{
-    /* position: absolute;
-    top: 0;
-    left: 0; */
-    background-color: red;
+#shop_product .product{
+    padding-bottom: 30px;
+}
+#shop_product .product_img{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+#shop_product .product_details{
+    padding-bottom: 7px;
+}
+#shop_product .product .image{
+    transition: 0.4s;
+}
+#shop_product .product:hover .image{
+    transform: scale(1.1);
 
+    
+}
+#shop_product .product_img .tag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--second_primary_color);
+    width: 80px;
+    height: 26px;
+    text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 14px;
+    line-height: 27px;
+    color: var(--white);
+
+}
+#shop_product .product_img .action{
+    position: absolute;
+    top: 0;
+    right:0 ;
+}
+#shop_product .rating i{
+    color: var(--first_primary_color);
+    font-size: 11px;
+}
+#shop_product .page_nav li{
+    display: inline-block;
+    margin: 0 3px;
+    padding: 10px;
+    border: 1px solid var(--Gray-5);
+}
+#shop_product .page_nav li:first-child::before{
+    content: "\f177";
+    width: 20px;
+    height: 20px;
+
+}
+#shop_product .page_nav li a{
+    /* width: 36px;
+    height: 36px;
+    line-height: 36px; */
+    
+    color: var(--black);
+    
 }
 /*================ Shop page css end ======================*/
