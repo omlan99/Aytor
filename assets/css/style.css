@@ -281,14 +281,14 @@ common section
     visibility: hidden;
 } */
 /* new_arrival css end*/
-/* banner css start*/
-#banner{
+/* home_banner css start*/
+#home_banner{
     height: 461px;
     background-size: cover;
     color: var(--white);
     position: relative;
 }
-#banner::before{
+#home_banner::before{
     content: '';
     position: absolute;
     opacity: 1;
@@ -299,7 +299,7 @@ common section
     background: rgba(255,255,255,0.2);
     transform: skew(45deg);
  }
-#banner:hover::before{
+#home_banner:hover::before{
     opacity: 0;
     transition: 0.9s;
     left: 0;
@@ -307,28 +307,28 @@ common section
     opacity: 0;
 
 }
-#banner h2{
+#home_banner h2{
     font-family: var(--primary-font);
     padding-bottom: 15px;
     font-size: 48px;
     line-height: 57.6px;
 }
-#banner p{
+#home_banner p{
     line-height: 28px;
     padding-bottom: 30px;
 }
-#banner a{
+#home_banner a{
     background:transparent;
     padding: 18px 20px;
     border: 1px solid var(--white);
     transition: 0.4s;
 }
-#banner a:hover{
+#home_banner a:hover{
     border:none;
     background-color: var(--first_primary_color);
 
 }
-/* banner css end*/
+/* home_banner css end*/
 
 /* best selling css start*/
 #best_selling{
@@ -960,7 +960,7 @@ footer div:last-child form button{
 /*================ About page css end ======================*/
 
 /*================ Shop page css start  ======================*/
-#shop_banner{
+#bg_banner{
     height: 365px;
     background-size: cover;
     background-position: center;
@@ -968,21 +968,29 @@ footer div:last-child form button{
     z-index: 1;
 }
 
-#shop_banner::after{
+#bg_banner::after{
     content: '';
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    z-index: -1;
-
-    
+    z-index: -1;    
 }
 
-#shop_banner h2{
+#bg_banner h1{
     font-size: 48px;
     font-weight: 700;
     line-height: 58px;
     color: var(--white);
+}
+#bg_banner a{
+    color: var(--white);
+    margin: 0 10px;
+}
+#bg_banner a:first-child::after{
+    content: "/";
+    position: absolute;
+    left: 48.3%;
+    top: 55%;
 }
 #shop_product{
     padding: 100px 0 100px ;
@@ -1019,7 +1027,6 @@ footer div:last-child form button{
     font-size: 14px;
     line-height: 27px;
     color: var(--white);
-
 }
 #shop_product .product_img .action{
     position: absolute;
@@ -1035,6 +1042,7 @@ footer div:last-child form button{
     margin: 0 3px;
     padding: 10px;
     border: 1px solid var(--Gray-5);
+    transition: 0.4s;
 }
 #shop_product .page_nav li:first-child::before{
     content: "\f177";
@@ -1042,12 +1050,18 @@ footer div:last-child form button{
     height: 20px;
 
 }
+#shop_product .page_nav li a,
 #shop_product .page_nav li a{
-    /* width: 36px;
-    height: 36px;
-    line-height: 36px; */
-    
+
     color: var(--black);
     
+}
+#shop_product .page_nav li:hover{
+    background-color: var(--black);
+   
+}
+#shop_product .page_nav li:hover a,
+#shop_product .page_nav li:hover i{
+    color: var(--white);
 }
 /*================ Shop page css end ======================*/
