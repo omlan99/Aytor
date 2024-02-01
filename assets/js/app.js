@@ -40,7 +40,16 @@ $(document).ready(function(){
     $('#search_modal').addClass('show');
   })
  $('#close_btn').on('click', function(){
-  $('#search_modal').removeclass('show');
+  $('#search_modal').removeClass('show');
  })
+ // Deals container
+ $('#timer').countdown('2024/10/10', function(event) {
+  var $this = $(this).html(event.strftime(''
+
+    + '<div><span>%D</span> <p>Days</p></div> '    
+    + '<div><span>%H</span><p>Hours</p></div>'
+    + '<div><span>%M</span> <p>min</p></div> '
+    + '<div><span>%S</span><p>sec</p></div>'));
+});
 });
 

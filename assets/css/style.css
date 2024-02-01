@@ -244,20 +244,19 @@ common section
 #new_arrival i{
      color: var(--first_primary_color);
 }   
-#new_arrival .card_img{
+#new_arrival .cards_img{
     position: relative;
 }
-#new_arrival .card_img .hover_img{
+#new_arrival .cards_img .hover_img{
     position: absolute;
-    inset: 0;
-    z-index: 2;
-    object-fit: cover; 
-    object-position: center;
-    
-}
-#new_arrival .card_img:hover .show_img{
+    top: 0;
     opacity: 0;
     visibility: hidden;
+    transition: 0.4s ease-in-out;
+}
+#new_arrival .cards:hover .hover_img{
+    opacity: 1;
+    visibility: visible;
 }    
 #new_arrival .action{
     position: absolute;
@@ -285,10 +284,12 @@ common section
 /* new_arrival css end*/
 /* home_banner css start*/
 #home_banner{
-    height: 461px;
+    height: 561px;
+    background-position: center;
     background-size: cover;
     color: var(--white);
     position: relative;
+    z-index: 1;
 }
 #home_banner::before{
     content: '';
@@ -303,11 +304,11 @@ common section
  }
 #home_banner:hover::before{
     opacity: 0;
-    transition: 0.4s;
     left: 0;
     right: 0;
     opacity: 0;
     transition: 0.9s;
+    z-index: -1;
 
 }
 #home_banner h2{
@@ -315,6 +316,7 @@ common section
     padding-bottom: 15px;
     font-size: 48px;
     line-height: 57.6px;
+    font-weight: 900;
 }
 #home_banner p{
     line-height: 28px;
@@ -325,6 +327,7 @@ common section
     padding: 18px 20px;
     color: var(--white);
     border: 1px solid var(--white);
+    transition: 0.4s;
 
 }
 /* #home_banner .row a:hover{
@@ -350,7 +353,13 @@ common section
     padding-top: 96px;
     padding-bottom: 36px;
 }
-#best_selling .image .img_tag{
+#best_selling .row{
+    padding-bottom: 35px;
+}
+/* #best_selling .cards{
+    margin: 0;
+} */
+/* #best_selling .image .img_tag{
     position: absolute;
     top: 12px;
     left: 20px;
@@ -376,7 +385,7 @@ common section
 }
 #best_selling .overlay a i{
 
-}
+} */
 /* best selling css end*/
 /* deals css start*/
 #dealing{
@@ -487,6 +496,18 @@ common section
 #special_offer{
     height: 517px;
     background-color: var(--bg);
+}
+#special_offer .offer_content h5{
+    line-height: 28px;
+}
+#special_offer .offer_content h3{
+    font-size: 36px;
+    line-height: 46px;
+    padding: 9px 0 10px;
+}
+#special_offer .offer_content p{
+    line-height: 28px;
+    padding-bottom: 30px;
 }
 #special_offer .img{
     position:relative;
@@ -695,6 +716,7 @@ footer div:last-child form button{
     color: var(--first_primary_color);
     width: 40px;
     height: 40px;
+    line-height: 40px;
     border-radius: 50%;
     border: 1px solid var(--white);
     transition: 0.4s;
@@ -705,6 +727,36 @@ footer div:last-child form button{
     background-color: var(--white);
     border-color: var(--white);
     transform: rotate(90deg);
+}
+#pupup_section .pupup_box {
+    padding: 50px 125px 195px;
+    text-align: center;
+    background-color: #ff6f61;
+    /* position: relative; */
+}
+#pupup_section .pupup_box h3 {
+    text-align: center;
+    color: #fff;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 700;
+    padding: 0 0 20px 0;
+    position: relative;
+    display: inline-flex;
+}
+#pupup_section .pupup_box P {
+    color: #fff;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 10px 0;
+    margin: 0px;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 10px;
 }
 /* search_modal css end* 
     width: 60px;
@@ -992,16 +1044,23 @@ footer div:last-child form button{
     line-height: 58px;
     color: var(--white);
 }
-#bg_banner a{
+/* #bg_banner a{
     color: var(--white);
     margin: 0 10px;
-}
-
+} */
+/* 
 #bg_banner a:first-child::after{
     content: "/";
     position: absolute;
     left: 48.3%;
     top: 55%;
+} */
+#bg_banner .breadcrumb .breadcrumb-item a{
+    margin: 32px 0;
+    color: var(--white);
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color: var(--white);
 }
 #shop_product{
     padding: 100px 0 100px ;

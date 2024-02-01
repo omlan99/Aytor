@@ -51,46 +51,9 @@ p{
 .btn:hover, .btn-round:hover{
     background-color: var(--white);
     color: var(--first_primary_color);
+    border: 1px solid var(--text-color);
 }
-.mega-hover{
-    position: relative;
-    overflow: hidden;
-}
-.mega-hover:after,.mega-hover:before {
-    content: '';
-    position: absolute;
-    pointer-events: none;
-    opacity: 1;
-    z-index: 3
-}
-.mega-hover:before {
-    top: 0;
-    right: 51%;
-    bottom: 0;
-    left: 50%;
-    background: rgba(255,255,255,0.2)
-}
-.mega-hover:after {
-    top: 50%;
-    right: 0;
-    bottom: 50%;
-    left: 0;
-    background: rgba(255,255,255,0.3)
-}
-.mega-hover:hover:before {
-    left: 0;
-    right: 0;
-    opacity: 0;
-    -webkit-transition: all 900ms linear;
-    transition: all 900ms linear
-}
-.mega-hover:hover:after {
-    top: 0;
-    bottom: 0;
-    opacity: 0;
-    -webkit-transition: all 900ms linear;
-    transition: all 900ms linear
-}
+
 .btn-round{
     height: 80px;
     width: 80px;
@@ -120,13 +83,16 @@ footer{
 .bg_white{
     background-color: var(--white);
 }
-.card_img img{
+.cards_img img{
     width: 100%;
+    overflow: hidden;
 }
-.slide_1 .card{
+.slide_1 .cards, 
+#best_selling .cards{
     border: 1px solid var(--bg);
     margin:12px;
     padding-bottom: 27px;
+    /* overflow: hidden; */
 }
 
 .banner_title{
@@ -151,12 +117,46 @@ footer{
     margin-left: 5px;
     
 }
-.cards .cards-img img{
+/* .cards .cards-img img{
     position: relative;
 }
 .cards .cards_img .action{
     position:absolute;
     top: 50%;
     left: 50%;
-}
+} */
     
+/* product_card css start*/
+.product_info p{
+    padding-top: 24px;
+    line-height: 28px;
+}
+.product_info h5{
+    font-size: 20px;
+    line-height: 26px;
+    padding: 5px 0 11px 0;
+
+}
+.product_info a{
+    color: var(--text-color);
+}
+.product_info a:hover{
+    color:var(--first_primary_color)
+}
+.cards_img{
+    position: relative;
+    overflow: hidden;
+}
+.cards_img .hover_img{
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s ease-in-out;
+}
+.cards:hover .hover_img{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.1);
+}    
+/* product_card css end*/
