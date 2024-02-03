@@ -42,6 +42,13 @@ $(document).ready(function(){
  $('#close_btn').on('click', function(){
   $('#search_modal').removeClass('show');
  })
+ //popup js
+ $(window).on('load', function(){
+  $('#popup').addClass('show')
+ })
+ $(".popup_x").on('click', function () {
+  $('#popup').removeClass('show')
+})
  // Deals container
  $('#timer').countdown('2024/10/10', function(event) {
   var $this = $(this).html(event.strftime(''

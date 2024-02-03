@@ -474,7 +474,7 @@ common section
 /* features css start*/
 #features{
     position: relative;
-    transform: translateY(45px);
+    transform: translateY(71px);
     padding: 25px;
     z-index: 9;
 }
@@ -728,54 +728,93 @@ footer div:last-child form button{
     border-color: var(--white);
     transform: rotate(90deg);
 }
-#pupup_section .pupup_box {
-    padding: 50px 125px 195px;
-    text-align: center;
-    background-color: #ff6f61;
-    /* position: relative; */
-}
-#pupup_section .pupup_box h3 {
-    text-align: center;
-    color: #fff;
-    font-size: 36px;
-    line-height: 46px;
-    font-weight: 700;
-    padding: 0 0 20px 0;
-    position: relative;
-    display: inline-flex;
-}
-#pupup_section .pupup_box P {
-    color: #fff;
-    font-size: 16px;
-    line-height: 28px;
-    font-weight: 400;
-    padding: 10px 0;
-    margin: 0px;
-    display: inline-flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
+/* popup css start */
+#popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    background-color: rgba(17,22,30,0.6);
+    display: flex;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
+    z-index: 999991;
+    transition: all ease 0.7s;
+    opacity: 0;
+    visibility: hidden;
 }
-/* search_modal css end* 
-    width: 60px;
-    height: 60px;
-    background: none;
-    border-radius: 50%;
-    border: 1px solid var(--primary-color-light);
-    color: var(--primary-color-light);
-    font-size: 20px;
+#popup.show {
+    opacity: 1;
+    visibility: visible;
+}
+#popup .container {
+    background-color: var(--theme-color);
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+}
+#popup .info {
+    width: 900px;
+    height: 500px;
+    background-position: bottom !important;
+    background-repeat: no-repeat;
+    background-color: var(--first_primary_color);
+}
+#popup .info h3 {
+    color: var(--light);
+    font-family: var(--primary-font);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    padding: 25px 0;
+}
+#popup .info p {
+    color: var(--light);
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    padding: 10px 125px;
+}
+#popup .info form {
+    margin: 25px 0;
+}
+#popup .info form input {
+    width: 500px;
+    height: 45px;
+
+}
+#popup .info form button {
+    background-color: var(--black);
+    color: var(--white);
+    border: none;
+    padding: 10px 30px;
+}
+#popup .check p{
+    padding: 10px 8px;
+}
+#popup .popup_x{
     position: absolute;
     right: 20px;
     top: 20px;
-    transition: .4s;
-    #search_modal #search_close_btn:hover{
-    background: var(--light);
-    border-color: var(--light);
+    background: var(--white);
+    color: var(--first_primary_color);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--white);
+    transition: 0.4s;
+    transform-origin: center;
+}
+#popup .popup_x:hover{
+    background-color: var(--white);
+    border-color: var(--white);
     transform: rotate(90deg);
-}/   
-
+}
+/* popup css end */
 /*================ About page css start ======================*/
 /* about_banner css start*/
 #about_banner{
